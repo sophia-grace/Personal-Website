@@ -1,11 +1,13 @@
-.body {
+html, .body {
     font-family: 'PT Sans', sans-serif;
+    height: 100%;
 }
 
 /* Sidebar -- logo and icons */
 .sidebar {
     background-color: #DAE1F1;
     height: 100vh;
+    max-width: 35%;
 }
 
 .logo {
@@ -15,7 +17,6 @@
 
 .logo img {
     max-width: 100%;
-    height: auto;
     min-width: 1%;
     min-height: 1%;
     border-radius: 50%; 
@@ -24,22 +25,25 @@
 
 .icons {
     padding: 15% 5%; 
-    transform: translate(7%, 0); 
+    transform: translate(7%, 0);
 }
 
 .fa-envelope-open-o {
     color: #011C3A;
     transform: scale(1.8);
+    min-width: auto;
 }
 
 .fa-github {
     color: #011C3A;
     transform: scale(1.8);
+    min-width: auto;
 }
 
 .fa-file-text-o {
     color: #011C3A;
     transform: scale(1.8);
+    min-width: auto;
 }
 
 /* Tooltip */
@@ -59,7 +63,9 @@
 #section {
     font-family: 'PT Sans', sans-serif;
     height: 100vh;
-    padding: 5%;
+    max-width: 75%;
+    margin: 0;
+    padding: 5vw;
     z-index:-1;
     background-color: white;
     opacity: 0;
@@ -75,9 +81,9 @@
 }
 
 .title {
-    font-size: 2.40em;
-    margin-top: 1em;
-    margin-bottom: 2em;   
+    font-size: 2.40vw;
+    margin-top: 1vw;
+    margin-bottom: 2vw;   
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     background-color: white;
     border-radius: 2%;
@@ -85,20 +91,20 @@
 
 
 .subtitle {
-    font-size: 2em;
-    margin-bottom: 0.1em;
+    font-size: 2vw;
+    margin-bottom: 0.1vw;
 }
 
 
 .text {
-    font-size: 1.40em; 
-    margin-bottom: 0.5em;
-    background-color: white;
+    font-size: 1.40vw; 
+    margin-bottom: 0.5vw;
 }
 
 /* The panel */
 .panel-default {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    min-width: auto;
 }
 
 
