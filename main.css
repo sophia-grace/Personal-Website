@@ -35,3 +35,40 @@
     color: #26FF00;
     transform: scale(2);
 }
+
+/* Tooltip */
+.tooltip.bottom > .tooltip-inner {
+    background-color: white;
+    color: black;
+}
+
+/* Tooltip tip */
+.tooltip.bottom > .tooltip-arrow {
+    border-bottom: 5px solid white;
+}
+
+
+/* Content -- the stuff about me */
+.section {
+    z-index:-1;
+    background-color: white;   
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.40em;
+    margin-top: 1em;
+    margin-bottom: 1em;    
+}
+
+
+.subtitle {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+
+.text {
+    font-size: 1.40em; 
+    margin-bottom: 0.5em;
+}
