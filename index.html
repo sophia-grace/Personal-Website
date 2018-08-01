@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <title>Master of time, space, and dimension</title>
+  <title>Sophia Trump</title>
   <meta name="description" content="Junior computer Science major at Bryn Mawr College" "Software Engineering" "Linux" "C" "Java" "Computer Science major seeking summer 2019 internship">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://www.java.com/js/deployJava.js"></script>
   <script src="main.js"></script>
   
 
@@ -25,12 +26,10 @@
     
    <script>
         $(document).ready(function() {
-            $('#section').fadeIn();
-        });
+            $("#section").addClass("load");
+            $('[data-toggle="tooltip"]').tooltip(); 
+        }); 
        
-       $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();   
-       });
    </script>
     
     
@@ -41,18 +40,18 @@
         <!-- Contains the logo and links -->
         <div class="sidebar col-md-3">
             
-            <div class="logo">
+            <div class="logo" class = "responsive">
                 <div class="col-x1-5">
-                    <img src="mylogo.png">
+                    <img src="logo.jpg">
                 <div class="icons">
-                    <div class="col-xs-3 col-xs-offset-1">
+                    <div class="col-xs-4">
                             <a class="bottom" title="" data-placement="bottom" data-toggle="tooltip" data-original-title="Email" href="mailto: strump@brynmawr.edu" target="_blank"><i class="fa fa-envelope-open-o" aria-hidden="true"></i></a>
                         </div>                     
-                        <div class="col-xs-3" id = "icon">
+                        <div class="col-xs-4" id = "icon">
                             <a class="bottom" title="" data-placement="bottom" data-toggle="tooltip" data-original-title="GitHub" href="https://github.com/sophia-grace" target="_blank"><i class="fa fa-lg fa-github" aria-hidden="true"></i></a>
                         </div>
 
-                        <div class="col-xs-3" id = "icon">
+                        <div class="col-xs-4" id = "icon">
                             <a class="bottom" title="" data-placement="bottom" data-toggle="tooltip" data-original-title="Resume" href="Sophia_Trump_Resume.pdf" target="_blank"><i class="fa fa-lg fa-file-text-o" aria-hidden="true"></i></a>
                         </div>
                     </div>
@@ -62,18 +61,51 @@
     </div>
     
     
-    <div id="section" class="section col-md-9">
+    <div id="section" class="container col-md-9">
         <!-- Contains the stuff about me -->
-        <div class="title">Hi, I'm Sophia Trump.
-        </div>
-        <div class="subtitle"><b>About Me</b></div>
-            <div class="text">
-                I am a junior Computer Science major at Bryn Mawr College, one of the seven sisters in Philadelphia, PA. I am passionate about Neuroscience and social good. This summer, I am interning in Computer Networking and Systems at Ursinus College. I serve as co-President of Bryn Mawr's Computer Science club, <a href="http://sudohoot.com" target= "_blank">Sudo Hoot</a>, where I work to build a supportive academic and social community for marginalized identities in Computer Science. In my free time, if I'm not tinkering with a code, you might find me playing a videogame from The Legend of Zelda franchise.
-                <br>
-            </div>
+        <div class="title">Hi, I'm Sophia Trump.</div>
         
+        <!-- The panel labels -->
+        <div class= "panel panel-default">
+            <div class = "row">
+                <div class="subtitle col-sm-4" id = "AboutMeTitle" onclick = "drop('AboutMe')">[ -] About Me</div>
+                <div class="subtitle col-sm-4" id="PreviousProjectsTitle" onclick="drop('PreviousProjects');">[+]  Previous Projects</div>
+                <div class="subtitle col-sm-4" id="CurrentProjectsTitle" onclick="drop('CurrentProjects');">[+]  Current Projects</div> 
+            </div>
+        </div>
+        
+        
+        <!-- The panel content -->
+        <div class = "panel-body">
+            <div class="text" id="AboutMeBody" style = "display: block">
+                I'm a junior Computer Science major with an interest in Neuroscience and Linguistics at Bryn Mawr College, one of the seven sisters located Philadelphia, PA. This summer, I am interning in Computer Networking and Systems at Ursinus College, during which I have assisted in the planning and redesign of the college's wireless network. I also serve as co-President of Bryn Mawr's Computer Science club, <a href="http://sudohoot.com" target= "_blank">Sudo Hoot</a>, where I work to build a supportive academic and social community for marginalized identities in Computer Science.
+            </div>          
+                
+            <div class="text" id="PreviousProjectsBody" style="display: none">
+                <ul style="list-style-type:disc">
+                    <li>This is my first previous project.</li>
+                    <br>
+                    <li>This is my second previous project.</li>
+                    <br>
+                    <li>This is my third previous project</li>
+                    </ul>
+            </div>
+            
+            
+            <div class="text" id="CurrentProjectsBody" style="display: none">
+                <ul style="list-style-type:disc">
+                    <li>This is my first current project.</li>
+                    <br>
+                    <li>This is my second current project.</li>
+                    <br>
+                    <li>This is my third current project</li>
+                    </ul>
+            </div>
+        </div>
+          
+            
     </div>
-    
+            
     
 </body>
 </html>
