@@ -3,9 +3,22 @@ html, .body {
     height: 100%;
 }
 
+
+a, a:hover, a:active {
+    color: rgba(68,132,206);
+    font-weight: bolder; 
+    text-decoration: none;
+}
+
+.row {
+    padding-left: 1.5vw;
+}
+
+
 /* Sidebar -- logo and icons */
 .sidebar {
-    background-color: #DAE1F1;
+    background-image: url("shattered.png");
+    background-color: #EFEFEFEF;
     height: 100vh;
     max-width: 35%;
 }
@@ -25,25 +38,31 @@ html, .body {
 
 .icons {
     padding: 15% 5%; 
-    transform: translate(7%, 0);
+    transform: translate(5%, 0);
 }
 
-.fa-envelope-open-o {
-    color: #011C3A;
+.fa-envelope-open {
+    color: black;
     transform: scale(1.8);
     min-width: auto;
+    box-shadow: 0 4px 8px 0 rgba(68,132,206, 0.2), 0 6px 20px 0 rgba(68,132,206, 0.5);
+    border-radius: 50%;
 }
 
 .fa-github {
-    color: #011C3A;
+    color: black;
     transform: scale(1.8);
     min-width: auto;
+    box-shadow: 0 4px 8px 0 rgba(68,132,206, 0.2), 0 6px 20px 0 rgba(68,132,206, 0.5);
+    border-radius: 50%;
 }
 
-.fa-file-text-o {
-    color: #011C3A;
+.fa-file-text {
+    color: black;
     transform: scale(1.8);
     min-width: auto;
+    box-shadow: 0 4px 8px 0 rgba(68,132,206, 0.2), 0 6px 20px 0 rgba(68,132,206, 0.5);
+    border-radius: 50%;
 }
 
 /* Tooltip */
@@ -67,7 +86,8 @@ html, .body {
     margin: 0;
     padding: 5vw;
     z-index:-1;
-    background-color: white;
+    background-image: url("debut_light.png");
+    background-color: #EFEFEFEF;
     opacity: 0;
    -webkit-transition: opacity 1s ease-in;
        -moz-transition: opacity 1s ease-in;
@@ -81,37 +101,50 @@ html, .body {
 }
 
 .title {
-    font-size: 2.40vw;
+    font-size: 3.5vw;
     margin-top: 1vw;
-    margin-bottom: 2vw;   
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-    background-color: white;
+    margin-bottom: 10vw;   
     border-radius: 2%;
+    color: black;
 }
 
+.highlight {
+    background-color: rgb(249,207,0, 0.3);
+    padding: 2%;
+}
 
 .subtitle {
-    font-size: 2vw;
-    margin-bottom: 0.1vw;
+    font-size: 2.2vw;
+    margin-bottom: 0vw;
+}
+
+.subtitle:hover {
+    cursor: pointer;
 }
 
 
 .text {
-    font-size: 1.40vw; 
+    font-size: 1.7vw; 
     margin-bottom: 0.5vw;
 }
 
 /* The panel */
 .panel-default {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     min-width: auto;
+    background: none;
+    outline: none;
+    background-color: rgb(241,159,77, 0.5);
+    border-radius: 0%;
 }
 
 
 .panel-body {
-    padding-top: 5%;
-    padding-bottom: 5%;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-    background-color: white;
-    border-radius: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* The list */
+ul.list {
+    list-style-type: disc;
+    margin: 0vw;
 }
