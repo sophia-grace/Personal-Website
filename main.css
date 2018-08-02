@@ -31,7 +31,7 @@ a, a:hover, a:active {
 
 .icons {
     padding: 15% 5%; 
-    transform: translate(5%, 0);
+    transform: translate(7.5%, 0);
 }
 
 .fa-envelope-open {
@@ -124,8 +124,7 @@ a, a:hover, a:active {
 
 
 .panel-body {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-bottom: 3.9%;
 }
 
 /* The list */
