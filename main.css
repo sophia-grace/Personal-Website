@@ -23,12 +23,6 @@ a, a:hover, a:active {
 }
 
 
-.logo {
-    display: flex;
-    justify-content: center;
-}
-
-
 .logo img {
     width: 100%;
     border-radius: 50%; 
