@@ -20,18 +20,10 @@ a, a:hover, a:active {
     background-image: url("shattered.png");
     background-color: #EFEFEFEF;
     height: 100vh;
-    max-width: 35%;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
 }
 
 .logo img {
-    max-width: 100%;
-    min-width: 1%;
-    min-height: 1%;
+    width: 100%;
     border-radius: 50%; 
     margin-top: 50%; 
 }
@@ -44,7 +36,6 @@ a, a:hover, a:active {
 .fa-envelope-open {
     color: black;
     transform: scale(1.8);
-    min-width: auto;
     box-shadow: 0 4px 8px 0 rgba(68,132,206, 0.2), 0 6px 20px 0 rgba(68,132,206, 0.5);
     border-radius: 50%;
 }
@@ -52,7 +43,6 @@ a, a:hover, a:active {
 .fa-github {
     color: black;
     transform: scale(1.8);
-    min-width: auto;
     box-shadow: 0 4px 8px 0 rgba(68,132,206, 0.2), 0 6px 20px 0 rgba(68,132,206, 0.5);
     border-radius: 50%;
 }
@@ -60,7 +50,6 @@ a, a:hover, a:active {
 .fa-file-text {
     color: black;
     transform: scale(1.8);
-    min-width: auto;
     box-shadow: 0 4px 8px 0 rgba(68,132,206, 0.2), 0 6px 20px 0 rgba(68,132,206, 0.5);
     border-radius: 50%;
 }
@@ -82,10 +71,7 @@ a, a:hover, a:active {
 #section {
     font-family: 'PT Sans', sans-serif;
     height: 100vh;
-    max-width: 75%;
-    margin: 0;
-    padding: 5vw;
-    z-index:-1;
+    padding: 5em;
     background-image: url("debut_light.png");
     background-color: #EFEFEFEF;
     opacity: 0;
@@ -101,9 +87,9 @@ a, a:hover, a:active {
 }
 
 .title {
-    font-size: 3.5vw;
-    margin-top: 1vw;
-    margin-bottom: 10vw;   
+    font-size: 3em;
+    margin-top: 1em;
+    margin-bottom: 2.5em;   
     border-radius: 2%;
     color: black;
 }
@@ -114,8 +100,8 @@ a, a:hover, a:active {
 }
 
 .subtitle {
-    font-size: 2.2vw;
-    margin-bottom: 0vw;
+    font-size: 2em;
+    margin-bottom: 0em;
 }
 
 .subtitle:hover {
@@ -124,8 +110,8 @@ a, a:hover, a:active {
 
 
 .text {
-    font-size: 1.7vw; 
-    margin-bottom: 0.5vw;
+    font-size: 1.5em; 
+    margin-bottom: 0.5em;
 }
 
 /* The panel */
@@ -146,5 +132,5 @@ a, a:hover, a:active {
 /* The list */
 ul.list {
     list-style-type: disc;
-    margin: 0vw;
+    margin: 0em;
 }
