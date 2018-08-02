@@ -132,3 +132,12 @@ a, a:hover, a:active {
 ul.list {
     list-style-type: disc;
 }
+
+
+/* The footer */
+footer {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    padding-left: 1em;
+}
