@@ -5,23 +5,26 @@ html, .body {
 
 
 a, a:hover, a:active {
-    color: rgba(68,132,206);
+    color: #056571;
     font-weight: bolder; 
     text-decoration: none;
 }
 
 .row {
-    padding-left: 1.5vw;
+    padding-left: 1vw;
 }
 
 
 /* Sidebar -- logo and icons */
 .sidebar {
-    background-image: url("shattered.png");
-    background-color: #EFEFEFEF;
+    background-color: #ccdfcb;
     height: 100vh;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+}
 
 .logo img {
     width: 100%;
@@ -35,23 +38,20 @@ a, a:hover, a:active {
 }
 
 .fa-envelope-open {
-    color: black;
+    color: #056571;
     transform: scale(1.8);
-    box-shadow: 0 4px 8px 0 rgba(68,132,206, 0.2), 0 6px 20px 0 rgba(68,132,206, 0.5);
     border-radius: 50%;
 }
 
 .fa-github {
-    color: black;
+    color: #056571;
     transform: scale(1.8);
-    box-shadow: 0 4px 8px 0 rgba(68,132,206, 0.2), 0 6px 20px 0 rgba(68,132,206, 0.5);
     border-radius: 50%;
 }
 
 .fa-file-text {
-    color: black;
-    transform: scale(1.8);
-    box-shadow: 0 4px 8px 0 rgba(68,132,206, 0.2), 0 6px 20px 0 rgba(68,132,206, 0.5);
+    color: #056571;
+    transform: scale(1.8); 
     border-radius: 50%;
 }
 
@@ -73,8 +73,8 @@ a, a:hover, a:active {
     font-family: 'PT Sans', sans-serif;
     height: 100vh;
     padding: 5%;
-    background-image: url("debut_light.png");
-    background-color: #EFEFEFEF;
+    z-index: -1;
+    background-color: white;
     opacity: 0;
    -webkit-transition: opacity 1s ease-in;
        -moz-transition: opacity 1s ease-in;
@@ -89,19 +89,21 @@ a, a:hover, a:active {
 
 .title {
     font-size: 3em;
-    margin-top: 1%;
-    margin-bottom: 15%;   
+    margin-top: 0%;
+    margin-bottom: 13%;   
     border-radius: 2%;
     color: black;
 }
 
 .highlight {
-    background-color: rgb(249,207,0, 0.3);
+    background-color: rgb(152,88,109, 0.5);
     padding: 2%;
 }
 
 .subtitle {
-    font-size: 2em;
+    font-size: 1.7em;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .subtitle:hover {
@@ -118,7 +120,7 @@ a, a:hover, a:active {
     min-width: auto;
     background: none;
     outline: none;
-    background-color: rgb(241,159,77, 0.5);
+    background-color: rgb(65,65,65, 0.2);
     border-radius: 0%;
 }
 
@@ -130,13 +132,4 @@ a, a:hover, a:active {
 /* The list */
 ul.list {
     list-style-type: disc;
-}
-
-
-/* The footer */
-footer {
-    position: absolute;
-    overflow: hidden;
-    bottom: 0;
-    padding-left: 1em;
 }
