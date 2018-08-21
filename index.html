@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <title>Hi, I'm Sophia Trump</title>
-  <meta name="description" content="Junior computer Science major at Bryn Mawr College" "Software Engineering" "Linux" "C" "Java" "Computer Science major seeking summer 2019 internship">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Welcome!</title>
+  <meta name="description" content="Junior Computer Science major at Bryn Mawr College.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -32,14 +32,14 @@
 <body>
     <div class="main">
         <!-- Contains the logo and links -->
-        <div class="sidebar col-md-3">
+        <div class="sidebar col-md-3 scrollspy">
             
-            <div class="logo" class = "responsive">
+            <div class="logo">
                 <div class="col-x1-5">
-                    <img src="logo.jpg">
+                    <img src="logo.jpg" alt="Sophia Trump's logo. The letters S and T in black with a white background.">
                 <div class="icons">
                     <div class="col-xs-4">
-                            <a class="bottom" title="" data-placement="bottom" data-toggle="tooltip" data-original-title="Email" href="mailto: strump@brynmawr.edu" target="_blank"><i class="fa fa-envelope-open" aria-hidden="true"></i></a>
+                            <a class="bottom" title="" data-placement="bottom" data-toggle="tooltip" data-original-title="Email" href="mailto:strump@brynmawr.edu" target="_blank"><i class="fa fa-envelope-open" aria-hidden="true"></i></a>
                         </div>                     
                         <div class="col-xs-4" id = "icon">
                             <a class="bottom" title="" data-placement="bottom" data-toggle="tooltip" data-original-title="GitHub" href="https://github.com/sophia-grace" target="_blank"><i class="fa fa-lg fa-github" aria-hidden="true"></i></a>
@@ -57,14 +57,16 @@
     
     <div id="section" class="container col-md-9">
         <!-- Contains the stuff about me -->
+        
         <div class="title"><span class="highlight"><b>Hi, I'm Sophia Trump.</b></span></div>
+       
         
         <!-- The panel labels -->
         <div class= "panel panel-default">
             <div class = "row">
-                    <div class="subtitle col-sm-4" id = "AboutMeTitle" onclick = "drop('AboutMe')">[ -] <span class = "subHighlight">ABOUT ME</span></div>
-                    <div class="subtitle col-sm-4" id="PreviousProjectsTitle" onclick="drop('PreviousProjects');">[+]  <span class = "subHighlight">PREVIOUS PROJECTS</span></div>
-                    <div class="subtitle col-sm-4" id="CurrentProjectsTitle" onclick="drop('CurrentProjects');">[+]  <span class = "subHighlight">CURRENT PROJECTS</span></div> 
+                <span class = "subHighlight"><div class="subtitle col-sm-4" id = "AboutMeTitle" onclick = "drop('AboutMe')">[ -] ABOUT ME</div></span>
+                <span class = "subHighlight"><div class="subtitle col-sm-4" id="PreviousProjectsTitle" onclick="drop('PreviousProjects');">[+]  PREVIOUS PROJECTS</div></span>
+                <span class = "subHighlight"><div class="subtitle col-sm-4" id="CurrentProjectsTitle" onclick="drop('CurrentProjects');">[+]  CURRENT PROJECTS</div></span>
             </div>
         </div>
         
@@ -72,29 +74,34 @@
         <!-- The panel content -->
         <div class = "panel-body">
             <div class="text" id="AboutMeBody" style = "display: block">
-                &emsp;&emsp;I'm a junior Computer Science major at Bryn Mawr College with an interest in Neuroscience and Linguistics. This summer, I'm interning in Computer Networking and Systems at Ursinus College, during which I have assisted in the planning and redesign of the college's wireless network. I also serve as co-President of Bryn Mawr's Computer Science club, <a href="https://sudohoot.com" target= "_blank">Sudo Hoot</a>, where I work to build a supportive academic and social community for women in Computer Science.
+                <p>I'm a junior Computer Science major at Bryn Mawr College. This summer, I'm interning in Computer Networking and Systems at Ursinus College, during which I have assisted in the redesign and replacement of the college's wireless network. I also serve as Co-President of Bryn Mawr's Computer Science club, <a href="https://sudohoot.com" target= "_blank">Sudo Hoot</a>, where I work to build a supportive academic and social community for women in Computer Science.</p>
+               
+                <p>I enjoy writing short stories, playing video games (currently playing: Breath of the Wild), solving jigsaw puzzles, and playing volleyball. Aside from Computer Science, I am also interested in Neuroscience and Linguistics. I enjoy meeting new people and talking about anything, so reach out to me!</p>
+                
             </div>          
                 
             <div class="text" id="PreviousProjectsBody" style="display: none">
                 <ul class = "list">
-                    <li><a class="bottom" title="" data-placement="bottom" data-toggle="tooltip" data-original-title="via GitHub" href="https://github.com/sophia-grace/Text-Adventure-Game" target="_blank">Text Adventure Game</a> - A text adventure game implemented in Java with self-designed Graph, Node, Linked List, Binary Tree, Dictionary, HashTable, and Queue classes. Try to escape before the ghost of Merion Hall catches you!</li>
+                    <li><a href="https://github.com/sophia-grace/Text-Adventure-Game" target="_blank">Text Adventure Game</a> - An escape game. Implemented in Java with self-designed Graph, Node, Linked List, Binary Tree, Dictionary, HashTable, and Queue classes. Utilizes Breadth First Search for game play hints. Play the game to escape Merion Hall before the ghost catches you.</li>
                     
-                    <li><a class="bottom" title="" data-placement="bottom" data-toggle="tooltip" data-original-title="via GitHub" href="https://github.com/sophia-grace/Bus-Schedule-er" target="_blank">Blue Bus Schedule-er</a> - A site that organizes Bi-Co Blue Bus schedules according to destination, day, and time. Designed two interfaces tested using A/B testing, and a third interface based on these findings. Check out my site <a href="http://sophiatrump.com/bluebus/mycalendar.html" target="_blank">here</a>, and the college's official site <a href="http://www.brynmawr.edu/transportation/bico.shtml" target="_blank">here</a>.</li>
+                    <li><a href="https://sophiatrump.com/bluebus/mycalendar.html" target="_blank">Blue Bus Scheduler</a> - A website organizing Bryn Mawr and Haverford College intercampus bus schedules according to destination, day, and time. Implemented in HTML, CSS, and Javascript. Created two interfaces and conducted A/B testing. Designed a third interface based on these findings. Documentation of testing and design processes can be found <a href="https://sophiatrump.com/bluebus/Blue_Bus_Scientific_Journal.pdf">here</a>. Code for all three interfaces can be found <a href="https://github.com/sophia-grace/Bus-Schedule-er" target="_blank">here</a>.</li>
                     
-                    <li><a class="bottom" title="" data-placement="bottom" data-toggle="tooltip" data-original-title="via GitHub" href="https://github.com/sophia-grace/Battleship-in-Assembly-Language" target="_blank">Battleship Game</a> -  The game of Battleship in Assembly using the Jupyter Little Computer 3 simulator and software. Try to beat the computer!</li>
+                    <li><a href="https://github.com/sophia-grace/Battleship-in-Assembly-Language" target="_blank">Battleship Game</a> -  The game of Battleship implemented in Assembly using the <a href="https://github.com/Calysto/calysto_lc3" target="_blank">Jupyter Little Computer 3 simulator and software</a>. Try to sink all the computer's ships before it sinks yours.</li>
                     </ul>
             </div>
                         
             <div class="text" id="CurrentProjectsBody" style="display: none">
                 <ul class = "list">
-                    <li><b>Sudo Hoot Computer Science Club</b> - Planning and organizing club workshops and meetings for 2018/2019. Updating <a href="https://sudohoot.com" target = "_blank">the club website</a>. Brainstorming with other officers to increase club outreach and mentorship.</li>
+                    <li><b>Sudo Hoot Computer Science Club</b> - Planning and organizing club workshops and meetings for 2018-2019. Updating <a href="https://sudohoot.com" target = "_blank">the club website</a>. Brainstorming with other officers to increase club outreach and mentorship.</li>
                     
                     <li><b>2018 Summer Internship</b> - Assisting in the planning and redesign of the Ursinus College wireless network. Performing signal testing for proper placement of Wireless Access Points using <a href="https://www.ekahau.com/products/ekahau-site-survey/overview/" target="_blank">Ekahau software</a>.
-                    Terminating Ethernet cables to patch panels. Connecting switches to the network and configuring ports to VLANs.</li>
+                    Terminating ethernet cables to patch panels and connecting Extreme-brand switches to the network. Assisting with assigning ports on switches to VLANs.</li>
                     
-                    <li><b>Part-time student tech at Ursinus College</b> - Assisting department with GitHub setup.</li>
+                    <li><b>Electronics Self-Study</b> - Learning about Arduino and Raspberry Pi platforms, breadboards, and soldering.</li>
                     
-                    <li>My personal webpapge! (<a href="https://github.com/sophia-grace/Personal-Website" target= "_blank">Constant updates</a>.)</li>
+                    <li><b>Part-time student tech at Ursinus College</b> - Troubleshooting technology related questions and issues for walk-in students, faculty, and staff. Assisting department with GitHub setup.</li>
+                    
+                    <li>My personal webpage! (<a href="https://github.com/sophia-grace/Personal-Website" target= "_blank">Constant updates</a>.)</li>
                     </ul>
             </div>
         </div>

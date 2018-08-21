@@ -4,16 +4,32 @@ html, .body {
 }
 
 
-a, a:hover, a:active {
+a, a:hover, a:active, a:visited {
     color: #056571;
     font-weight: bolder; 
     text-decoration: none;
 }
 
-.row {
-    padding-left: 1vw;
+
+/* Break differently depending on screen size */
+@media only screen and (max-width: 600px) {
+    .title {
+        white-space: normal;
+    }
+    .logo img {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
 }
 
+@media only screen and (min-width: 601px) {
+    .title {
+        white-space: nowrap;
+    }
+    .logo img {
+        margin-top: 50%;
+    }
+}
 
 /* Sidebar -- logo and icons */
 .sidebar {
@@ -29,7 +45,6 @@ a, a:hover, a:active {
 .logo img {
     width: 100%;
     border-radius: 50%; 
-    margin-top: 50%; 
 }
 
 .icons {
@@ -73,7 +88,6 @@ a, a:hover, a:active {
     font-family: 'PT Sans', sans-serif;
     height: 100vh;
     padding: 5%;
-    z-index: -1;
     background-color: white;
     opacity: 0;
    -webkit-transition: opacity 1s ease-in;
@@ -87,29 +101,38 @@ a, a:hover, a:active {
     opacity: 1;
 }
 
+/* The title */
 .title {
-    font-size: 3em;
-    margin-top: 0%;
-    margin-bottom: 13%;   
-    border-radius: 2%;
-    color: black;
+    font-size: 3.3em;
+    margin-bottom: 5%;
+    overflow: hidden;    
+    letter-spacing: .02em;
+    animation: typing 3.5s steps(30, end);
 }
 
-.highlight {
-    background-color: rgb(152,88,109, 0.5);
-    padding: 2%;
+
+
+.container {
+    margin-bottom: 10%;
+    padding: none;
 }
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
 
 .subtitle {
     font-size: 1.7em;
     padding-top: 1%;
-    padding-bottom: 1%;
+    padding-bottom: 1%;    
 }
 
-.subtitle:hover {
+.subHighlight:hover {
     cursor: pointer;
 }
-
 
 .text {
     font-size: 1.5em;
@@ -124,9 +147,13 @@ a, a:hover, a:active {
     border-radius: 0%;
 }
 
+.row {
+    padding-left: 1vw;
+}
 
 .panel-body {
-    padding-bottom: 3.9%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 /* The list */
