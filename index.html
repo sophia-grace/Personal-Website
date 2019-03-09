@@ -6,41 +6,41 @@
   <title>Welcome!</title>
   <meta name="description" content="Junior Computer Science major at Bryn Mawr College.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="http://www.java.com/js/deployJava.js"></script>
   <script src="main.js"></script>
-  
-    
+
+
    <script>
         $(document).ready(function() {
             $("#section").addClass("load");
-            $('[data-toggle="tooltip"]').tooltip(); 
-        }); 
-       
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
    </script>
-    
-    
+
+
 </head>
-    
+
 <body>
     <div class="main">
         <!-- Contains the logo and links -->
         <div class="sidebar col-md-3 scrollspy">
-            
+
             <div class="logo">
                 <div class="col-x1-5">
                     <img src="logo.jpg" alt="Sophia Trump's logo. The letters S and T in black with a white background.">
                 <div class="icons">
                     <div class="col-xs-4">
                             <a class="bottom" title="" data-placement="bottom" data-toggle="tooltip" data-original-title="Email" href="mailto:strump@brynmawr.edu" target="_blank"><i class="fa fa-envelope-open" aria-hidden="true"></i></a>
-                        </div>                     
+                        </div>
                         <div class="col-xs-4" id = "icon">
                             <a class="bottom" title="" data-placement="bottom" data-toggle="tooltip" data-original-title="GitHub" href="https://github.com/sophia-grace" target="_blank"><i class="fa fa-lg fa-github" aria-hidden="true"></i></a>
                         </div>
@@ -53,14 +53,14 @@
             </div>
         </div>
     </div>
-    
-    
+
+
     <div id="section" class="container col-md-9">
         <!-- Contains the stuff about me -->
-        
+
         <div class="title"><span class="highlight"><b>Hi, I'm Sophia Trump.</b></span></div>
-       
-        
+
+
         <!-- The panel labels -->
         <div class= "panel panel-default">
             <div class = "row">
@@ -69,44 +69,48 @@
                 <span class = "subHighlight"><div class="subtitle col-sm-4" id="CurrentProjectsTitle" onclick="drop('CurrentProjects');">[+]  CURRENT PROJECTS</div></span>
             </div>
         </div>
-        
-        
+
+
         <!-- The panel content -->
         <div class = "panel-body">
             <div class="text" id="AboutMeBody" style = "display: block">
-                <p>I'm a junior Computer Science major at Bryn Mawr College. This summer, I'm interning in Computer Networking and Systems at Ursinus College, during which I have assisted in the redesign and replacement of the college's wireless network. I also serve as Co-President of Bryn Mawr's Computer Science club, <a href="https://sudohoot.com" target= "_blank">Sudo Hoot</a>, where I work to build a supportive academic and social community for women in Computer Science.</p>
-               
-                <p>I enjoy writing short stories, playing video games (currently playing: Breath of the Wild), solving jigsaw puzzles, and playing volleyball. Aside from Computer Science, I am also interested in Neuroscience and Linguistics. I enjoy meeting new people and talking about anything, so reach out to me!</p>
-                
-            </div>          
-                
+                <p>I'm a junior Computer Science major at Bryn Mawr College. I also serve as Co-President of Bryn Mawr's Computer Science club, <a href="https://sudohoot.com" target= "_blank">Sudo Hoot</a>, where I work to build a supportive academic and social community for women in Computer Science. This summer, I will be interning with Vanguard in the IT College to Corporate program. This past summer, I interned in Computer Networking and Systems at Ursinus College, during which I assisted in the redesign and replacement of the college's wireless network.</p>
+
+                <p>I enjoy writing short stories, playing video games (currently playing: Breath of the Wild), solving jigsaw puzzles, and playing volleyball. Aside from Computer Science, I am interested in Neuroscience and Linguistics. I enjoy meeting new people and talking about anything, so feel free to reach out!</p>
+
+            </div>
+
             <div class="text" id="PreviousProjectsBody" style="display: none">
                 <ul class = "list">
+                    <li><b>2018 Summer Internship</b> - Assisting in the planning and redesign of the Ursinus College wireless network. Performing signal testing for proper placement of Wireless Access Points using <a href="https://www.ekahau.com/products/ekahau-site-survey/overview/" target="_blank">Ekahau software</a>.
+                    Terminating ethernet cables to patch panels and connecting Extreme-brand switches to the network. Assisting with assigning ports on switches to VLANs.</li>
+
+                    <li><a href="https://github.com/sophia-grace/Java-Lexer" target="_blank">Java Lexer</a> - A Java Lexer written in Haskell. Handles the following token forms (also disregarding comments): identifier, boolean literal, null literal, separator, operator, integer literal (including hex, bin, octal, and decimal), character literal, string literal.</li>
+
                     <li><a href="https://github.com/sophia-grace/Text-Adventure-Game" target="_blank">Text Adventure Game</a> - An escape game. Implemented in Java with self-designed Graph, Node, Linked List, Binary Tree, Dictionary, HashTable, and Queue classes. Utilizes Breadth First Search for game play hints. Play the game to escape Merion Hall before the ghost catches you.</li>
-                    
+
                     <li><a href="https://sophiatrump.com/bluebus/mycalendar.html" target="_blank">Blue Bus Scheduler</a> - A website organizing Bryn Mawr and Haverford College intercampus bus schedules according to destination, day, and time. Implemented in HTML, CSS, and JavaScript. Created two interfaces and conducted A/B testing. Designed a third interface based on these findings. Documentation of testing and design processes can be found <a href="https://sophiatrump.com/bluebus/Blue_Bus_Scientific_Journal.pdf">here</a>. Code for all three interfaces can be found <a href="https://github.com/sophia-grace/Bus-Schedule-er" target="_blank">here</a>.</li>
-                    
+
                     <li><a href="https://github.com/sophia-grace/Battleship-in-Assembly-Language" target="_blank">Battleship Game</a> -  The game of Battleship implemented in Assembly using the <a href="https://github.com/Calysto/calysto_lc3" target="_blank">Jupyter Little Computer 3 simulator and software</a>. Try to sink all the computer's ships before it sinks yours.</li>
                     </ul>
             </div>
-                        
+
             <div class="text" id="CurrentProjectsBody" style="display: none">
                 <ul class = "list">
-                    <li><b>Sudo Hoot Computer Science Club</b> - Planning and organizing club workshops and meetings for 2018-2019. Updating <a href="https://sudohoot.com" target = "_blank">the club website</a>. Brainstorming with other officers to increase club outreach and mentorship.</li>
-                    
-                    <li><b>2018 Summer Internship</b> - Assisting in the planning and redesign of the Ursinus College wireless network. Performing signal testing for proper placement of Wireless Access Points using <a href="https://www.ekahau.com/products/ekahau-site-survey/overview/" target="_blank">Ekahau software</a>.
-                    Terminating ethernet cables to patch panels and connecting Extreme-brand switches to the network. Assisting with assigning ports on switches to VLANs.</li>
-                    
-                    <li><b>Electronics Self-Study</b> - Learning about Arduino and Raspberry Pi platforms, breadboards, and soldering.</li>
-                    
+                    <li><b>Sudo Hoot Computer Science Club</b> - Planning and organizing club workshops and meetings for 2019-2020. Securing funding and organizing a trip to the Philadelphia Women in <a href="https://northeast.womenintechsummit.net/" target="_blank">Technology Summit 2019</a>. Updating <a href="https://sudohoot.com" target = "_blank">the club website</a>. Increasing club outreach across the Tri-College Consortium of Bryn Mawr, Haverford, and Swarthmore colleges.</li>
+
+                    <li><b>Currently Reading:</b><a href="https://www.amazon.com/Technically-Wrong-Sexist-Algorithms-Threats-ebook/dp/B06XJBGPT9/ref=sr_1_1?keywords=Technically+Wrong%3A+Sexist+Apps%2C+Biased+Algorithms%2C+and+Other+Threats+of+Toxic+Tech+by+Sara+Wachter-Boettcher&qid=1551206461&s=books&sr=1-1-catcorr" target="_blank">Technically Wrong: Sexist Apps, Biased Algorithms, and Other Threats of Toxic Tech by Sara Wachter-Boettcher</a></li>
+
+                    <li><b>Machine Learning Basics</b> - Practicing with machine learning concepts, including overfitting and violations of fairness. Trained models predict if a community will be violent or not. Currently following <a href="https://developers.google.com/machine-learning/crash-course/ml-intro" target="_blank">Google's online course in Machine Learning</a>. Code for my learning so far can be found <a href="https://github.com/sophia-grace/Machine-Learning-Basics" target="_blank">here</a>.</li>
+
                     <li><b>Part-time student tech at Ursinus College</b> - Troubleshooting technology related questions and issues for walk-in students, faculty, and staff. Assisting department with GitHub setup.</li>
-                    
+
                     <li>My personal webpage! (<a href="https://github.com/sophia-grace/Personal-Website" target= "_blank">Constant updates</a>.)</li>
                     </ul>
             </div>
         </div>
     </div>
-            
-    
+
+
 </body>
 </html>
